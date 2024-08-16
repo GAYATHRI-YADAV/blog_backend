@@ -14,6 +14,12 @@ const connenctDB=async()=>{
 }
 connenctDB()
 
+app.use(cors({
+  origin: ['https://gayathri-yadav.github.io/blog_frontend/'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  headers: ['Content-Type', 'Authorization']
+}));
+
 //router import
 const userRoutes = require('./routes/userRoutes')
 const blogRoutes = require('./routes/blogRoutes')
