@@ -24,7 +24,7 @@ const app = express()
 //middelwares
 // app.use(cors())
 app.use(cors({
-  origin: ['https://gayathri-yadav.github.io/blog_frontend/'],
+  origin: ['https://gayathri-yadav.github.io/blogfrontend/'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   headers: ['Content-Type', 'Authorization']
 }));
